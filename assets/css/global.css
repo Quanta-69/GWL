@@ -1,10 +1,1 @@
-*{
-    font-family: Glass;
-}
-@font-face {
-    font-family: 'Glass'; 
-    src: url('../fonts/Glass.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap; 
-}
+@reference "tailwindcss";

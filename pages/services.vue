@@ -1,12 +1,12 @@
 <template>
     <div>
-        <h1>Home</h1>
+        <h1>Services</h1>
     </div>
 </template>
 
 <script setup lang="ts">
 useHead({
-    title: 'Home | GlassWebLabs',
+    title: 'Services | GlassWebLabs',
     meta: [
         { name: 'description', content: 'A brief description of your homepage content for SEO.' },
         { name: 'keywords', content: 'web design, website development, glassmorphism, transparent platform' },
