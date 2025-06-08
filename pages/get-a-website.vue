@@ -1,14 +1,12 @@
 <template>
     <div>
-        <h1>Home</h1>
-        <hero />
+        <h1>Submit real info here</h1>
     </div>
 </template>
 
 <script setup lang="ts">
-import { hero } from '~/components/pages/homepage/exporter'
 useHead({
-    title: 'Home | GlassWebLabs',
+    title: 'Get a website | GlassWebLabs',
     meta: [
         { name: 'description', content: 'A brief description of your homepage content for SEO.' },
         { name: 'keywords', content: 'web design, website development, glassmorphism, transparent platform' },
@@ -19,4 +17,6 @@ useHead({
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+
+</style>

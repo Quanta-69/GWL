@@ -1,0 +1,1 @@
+export { default as basicinfo } from "./basic-info-section.vue";

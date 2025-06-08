@@ -1,0 +1,1 @@
+export { default as pricing } from "./pricing-section.vue";

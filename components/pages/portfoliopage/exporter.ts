@@ -1,0 +1,1 @@
+export { default as fullportfolio } from "./portfolio-section.vue";
