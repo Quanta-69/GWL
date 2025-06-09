@@ -1,13 +1,12 @@
 <template>
     <!-- Hero Section -->
     <section>
-        
+
       <div class="wrapper animate-fade-in">
-        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-xl">
+        <h1>
           Your Vision, <span>Beautifully Crafted</span>
         </h1>
-        <p class="mt-6 text-lg md:text-xl text-white/90 leading-relaxed">
-          Get a stunning website designed and developed with a transparent process and easy management. Ready to shine online?</p>
+        <p>Get a stunning website designed and developed with a transparent process and easy. <br> Ready to shine online?</p>
 
         <div class="btn-wrap">
           <GlassButton text="Get Started" variant="primary"/>
@@ -32,13 +31,16 @@ section{
 }
 .wrapper{
     backdrop-filter: blur(10px);
-    @apply bg-[var(--alpha-bg)] rounded-xl py-15
+    @apply bg-[var(--alpha-bg)] rounded-xl py-10 gap-2
 }
 h1{
     span{
         @apply text-[var(--200)]
     }
-    @apply text-[var(--light)]
+    @apply text-[var(--light)] text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-xl
+}
+p{
+    @apply mt-8 text-3xl md:text-xl leading-relaxed text-center
 }
 @keyframes fadeIn {
   from {
