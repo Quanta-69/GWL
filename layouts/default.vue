@@ -1,11 +1,9 @@
 <template>
-    <h1>Nav</h1>
 
     <div>
         <slot/>
     </div>
 
-    <h1>Footer</h1>
 </template>
 
 <script setup lang="ts">
