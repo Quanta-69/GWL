@@ -7,7 +7,15 @@
           Your Vision, <span>Beautifully Crafted</span>
         </h1>
         <p>Get a stunning website designed and developed with a transparent process and easy. <br> Ready to shine online?</p>
-
+        <div class="card-wrap">
+            <div class="card" v-for="(hook, index) in hooks" :key="index">
+                <div class="svg" v-html="hook.icon"></div>
+                <div class="text-wrap">
+                    <h1>{{ hook.title }}</h1>
+                    <p>{{ hook.desc }}</p>
+                </div>
+            </div>
+        </div>
         <div class="btn-wrap">
           <GlassButton text="Get Started" variant="primary"/>
           <GlassButton text="Learn More" variant="secondary"/>
@@ -18,7 +26,7 @@
 </template>
 
 <script setup>
-// No script needed for this static hero section
+import hooks from '~/data/hooks.json'
 </script>
 
 <style scoped>
@@ -42,6 +50,21 @@ h1{
 p{
     @apply mt-8 text-3xl md:text-xl leading-relaxed text-center
 }
+.card{
+    .text-wrap{
+        @apply flex flex-col  gap-1
+    }
+    .svg{
+        @apply h-10 w-10 rounded-full bg-[var(--alpha-bg)] p-1 
+    }
+    h1{
+        @apply text-xl p-0 m-0 text-[var(--200)]
+    }
+    p{
+        @apply text-base p-0 m-0
+    }
+    @apply flex-row max-w-[350px] border border-[var(--alpha-border)] rounded-lg bg-[var(--alpha-bg)]
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -52,7 +75,6 @@ p{
     transform: translateY(0);
   }
 }
-
 .animate-fade-in {
   animation: fadeIn 1s ease-in-out;
 }

@@ -1,7 +1,9 @@
 
 @reference "tailwindcss";
 
-body{}
+body{
+    @apply bg-indigo-900
+}
 
 section{
     @apply w-full max-h-[50vh] flex items-center flex-col py-10
@@ -11,21 +13,24 @@ section{
     @apply max-w-[1500px] w-full flex items-center justify-center flex-col gap-10
 }
 .sect-text-wrap{
+    .sect-name{
+        @apply text-3xl text-[var(--400)]
+    }
+    .sect-intro{
+        @apply text-lg text-[var(--200)]
+    }
     @apply flex items-center justify-center flex-col gap-2
 }
-.sect-name{
-    @apply text-3xl text-[var(--400)]
+.sect-name, .sect-intro{
+    @apply text-center
 }
-.sect-intro{
-    @apply text-lg text-[var(--200)]
+.card-wrap{
+    .card{
+        @apply flex items-center justify-center gap-4 py-2 px-2 w-full max-w-[320px] shadow-md
+    }
+    @apply w-full flex items-center justify-center gap-5
 }
 
-.card-wrap{
-    @apply w-full max-w-[1000px] flex items-center justify-center
-}
-.card{
-    @apply shadow-md
-}
 .btn-wrap{
     @apply mt-8 flex flex-wrap justify-center gap-4
 }
