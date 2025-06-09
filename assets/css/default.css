@@ -5,7 +5,7 @@
     font-family: "Edu VIC WA NT Hand Pre", cursive;
     word-spacing: 5px;
     transition: all 0.3s;
-    @apply font-semibold border
+    @apply p-0 m-0 font-semibold border text-[var(--light)]
 }
 :root {
     --100:#c7aff7;

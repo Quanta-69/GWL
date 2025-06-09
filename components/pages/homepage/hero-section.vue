@@ -1,16 +1,19 @@
 <template>
     <!-- Hero Section -->
     <section>
+        
       <div class="wrapper animate-fade-in">
         <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-xl">
           Your Vision, <span>Beautifully Crafted</span>
         </h1>
         <p class="mt-6 text-lg md:text-xl text-white/90 leading-relaxed">
           Get a stunning website designed and developed with a transparent process and easy management. Ready to shine online?</p>
+
         <div class="btn-wrap">
           <GlassButton text="Get Started" variant="primary"/>
           <GlassButton text="Learn More" variant="secondary"/>
         </div>
+
       </div>
     </section>    
 </template>
