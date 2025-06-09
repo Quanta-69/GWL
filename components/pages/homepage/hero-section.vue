@@ -48,7 +48,7 @@ h1{
     @apply text-[var(--light)] text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-xl
 }
 p{
-    @apply mt-8 text-3xl md:text-xl leading-relaxed text-center
+    @apply m-8 text-3xl md:text-xl leading-relaxed text-center
 }
 .card{
     .text-wrap{
