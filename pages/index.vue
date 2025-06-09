@@ -1,12 +1,17 @@
 <template>
     <div>
-        <h1>Home</h1>
-        <hero />
+        <hero/>
+        <serviceoverview/>
+        <portfoliosnippet/>
+        <howitworks/>
+        <wcu/>
+        <testimonialsnippet/>
+        <finalcta/>
     </div>
 </template>
 
 <script setup lang="ts">
-import { hero } from '~/components/pages/homepage/exporter'
+import { finalcta, hero, howitworks, portfoliosnippet, serviceoverview, testimonialsnippet, wcu } from '~/components/pages/homepage/exporter'
 useHead({
     title: 'Home | GlassWebLabs',
     meta: [
