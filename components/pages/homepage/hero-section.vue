@@ -15,14 +15,9 @@
         <p class="mt-6 text-lg md:text-xl text-white/90 leading-relaxed">
           Get a stunning website designed and developed with a transparent process and easy management. Ready to shine online?
         </p>
-        <div class="mt-8 flex flex-wrap justify-center gap-4">
-          <button
-            class="px-6 py-3 bg-indigo-500 hover:bg-indigo-600 transition-all duration-300 text-white rounded-xl font-semibold shadow-lg"
-          >
-            Get Started
-          </button>
-          <button class="px-6 py-3 border border-white text-white hover:bg-white/10 transition-all duration-300 rounded-xl font-semibold">Learn More</button>
-          <GlassButton text="Learn More"/>
+        <div class="btn-wrap">
+          <GlassButton text="Get Started" variant="primary"/>
+          <GlassButton text="Learn More" variant="secondary"/>
         </div>
       </div>
     </section>

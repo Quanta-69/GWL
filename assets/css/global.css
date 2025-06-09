@@ -6,4 +6,6 @@ section{}
 
 .card-wrap{}
 
-.btn-wrap{}
+.btn-wrap{
+    @apply mt-8 flex flex-wrap justify-center gap-4
+}

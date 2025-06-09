@@ -22,7 +22,7 @@ const props = defineProps({
     },
     size: {
         type: String as () => 'sm' | 'md' | 'lg',
-        default: 'sm'
+        default: 'md'
     },
     customClass: {
         type: String,
@@ -64,40 +64,41 @@ const currentIcon = computed(() => {
 @reference "tailwindcss"
 
 button {
+    cursor: pointer;
     gap: 5px;
     transition: all .2s !important;
     @apply flex items-center justify-center
 }
 
 .base-btn-styles {
-    @apply rounded-md font-semibold hover:cursor-pointer shadow-md;
+    @apply rounded-xl font-semibold hover:cursor-pointer shadow-md;
 }
 
 /* Variants */
 .btn-primary {
-    background: linear-gradient(50deg, var(--200), var(--400));
-    @apply text-[var(--light-text)];
+    background:var(--300);
+    @apply text-[var(--light)];
 }
 
 .btn-primary:hover {
-    background: linear-gradient(-50deg, var(--400), var(--200));
-    @apply text-[var(--dark-text)]
+    background: var(--400);
 }
 
 .btn-secondary {
-    @apply bg-[var(--light-bg)] text-[var(--dark-text)] border;
+    background: var(--light);
+    @apply border text-[var(--dark)];
 }
 
 .btn-secondary:hover {
-    background: rgba(255, 255, 255, 0.106);
+    background: var(--alpha-background);
     backdrop-filter: blur(10px);
-    @apply border text-[var(--light-text)];
+    @apply border text-[var(--light)];
 }
 
 .btn-ghost {
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.106);
-    @apply border border-gray-300 hover:bg-[var(--light-text)] hover:text-[var(--dark-text)];
+    background: var(--alpha-background);
+    @apply border border-[var(--light)] hover:bg-[var(--light)] hover:text-[var(--dark)];
 }
 
 /* Sizes */
@@ -106,11 +107,11 @@ button {
 }
 
 .btn-md {
-    @apply px-4 py-2 text-base;
+    @apply px-6 py-3 text-base;
 }
 
 .btn-lg {
-    @apply px-6 py-3 text-lg;
+    @apply px-8.5 py-3.5 text-lg;
 }
 
 .icon-left {
