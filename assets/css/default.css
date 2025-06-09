@@ -5,7 +5,7 @@
     font-family: "Edu VIC WA NT Hand Pre", cursive;
     word-spacing: 5px;
     transition: all 0.3s;
-    @apply font-semibold
+    @apply font-semibold border
 }
 :root {
     --100:#c7aff7;
@@ -17,7 +17,7 @@
       
   
     /* Backgrounds for the glass effect */
-    --alpha-white: rgba(255, 255, 255, 0.106);
+    --alpha-bg: rgba(255, 255, 255, 0.106);
     --alpha-border:rgba(255, 255, 255, 0.2);
   
     /* Text Colors */

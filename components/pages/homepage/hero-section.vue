@@ -1,29 +1,18 @@
 <template>
-  <div class="relative w-full min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white font-sans">
-
     <!-- Hero Section -->
-    <section
-      class="flex items-center justify-center min-h-screen w-full bg-cover bg-center px-4 pt-24 md:pt-32 text-white"
-      style="background-image: linear-gradient(to bottom right, rgba(0,0,0,0.4), rgba(75,0,130,0.4)), url('/images/hero.jpg')"
-    >
-      <div
-        class="backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl rounded-3xl p-10 max-w-2xl text-center animate-fade-in"
-      >
+    <section>
+      <div class="wrapper animate-fade-in">
         <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-xl">
-          Your Vision, <span class="text-indigo-300">Beautifully Crafted</span>
+          Your Vision, <span>Beautifully Crafted</span>
         </h1>
         <p class="mt-6 text-lg md:text-xl text-white/90 leading-relaxed">
-          Get a stunning website designed and developed with a transparent process and easy management. Ready to shine online?
-        </p>
+          Get a stunning website designed and developed with a transparent process and easy management. Ready to shine online?</p>
         <div class="btn-wrap">
           <GlassButton text="Get Started" variant="primary"/>
           <GlassButton text="Learn More" variant="secondary"/>
         </div>
       </div>
-    </section>
-
-    
-  </div>
+    </section>    
 </template>
 
 <script setup>
@@ -31,6 +20,23 @@
 </script>
 
 <style scoped>
+@reference "tailwindcss";
+
+section{
+    background:url('~/assets/images/hero.jpg') no-repeat center center fixed;
+    border-image: fill 0 linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.5));
+    @apply py-0 min-h-[100vh] justify-center;
+}
+.wrapper{
+    backdrop-filter: blur(10px);
+    @apply bg-[var(--alpha-bg)] rounded-xl py-15
+}
+h1{
+    span{
+        @apply text-[var(--200)]
+    }
+    @apply text-[var(--light)]
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

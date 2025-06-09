@@ -1,11 +1,28 @@
+
 @reference "tailwindcss";
+body{
+    background: linear-gradient(135deg, var(--500), var(--100));
+}
+section{
+    @apply w-full h-[50vh] flex items-center flex-col py-10
+}
 
-section{}
+.wrapper{
+    @apply max-w-[1500px] w-full border-red-700 flex items-center justify-center flex-col gap-10
+}
+.sect-name{
+    @apply text-3xl
+}
+.sect-intro{
+    @apply text-lg
+}
 
-.wrapper{}
-
-.card-wrap{}
-
+.card-wrap{
+    @apply w-full max-w-[1000px] flex items-center justify-center
+}
+.card{
+    @apply shadow-md
+}
 .btn-wrap{
     @apply mt-8 flex flex-wrap justify-center gap-4
 }
