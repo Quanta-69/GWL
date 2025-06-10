@@ -65,6 +65,9 @@ p{
     }
     @apply flex-row max-w-[350px] border border-[var(--alpha-border)] rounded-lg bg-[var(--alpha-bg)]
 }
+.btn-wrap{
+  @apply mt-8
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

@@ -1,21 +1,60 @@
 <template>
-    <header>
-        <div class="logo">GWL</div>
-        <nav>
-            <Nuxtlink>Home</Nuxtlink>
-            <Nuxtlink>Portfolio</Nuxtlink>
-            <Nuxtlink>Get Started</Nuxtlink>
-            <Nuxtlink>About</Nuxtlink>
-        </nav>
-        <div class="auth">
-            <GlassButton size="sm" variant="primary" text="Login" />
-            <GlassButton size="sm" variant="secondary" text="si"
+    <div class="header">
+
+        <div class="logo">
+            <h1><NuxtLink to="/">GWL</NuxtLink></h1>
         </div>
-    </header>
+
+        <nav>
+            <NuxtLink to="/" >Home</NuxtLink>
+            <NuxtLink to="/portfolio">Portfolio</NuxtLink>
+            <NuxtLink to="/get-started">Get Started</NuxtLink>
+            <NuxtLink to="/about">About</NuxtLink>
+
+            <NuxtLink>More</NuxtLink>
+            <div class="dropdown-content">
+                <NuxtLink to="/faq">FAQ</NuxtLink>
+                <NuxtLink to="/how-it-works" >How it Works</NuxtLink>
+                <NuxtLink to="/contact">Contact</NuxtLink>
+            </div>
+        </nav>
+
+        <div class="auth btn-wrap">
+            <NuxtLink to="/login">
+                <GlassButton size="sm" variant="primary" text="Login"/>
+            </NuxtLink>
+            <NuxtLink to="/signup">
+                <GlassButton size="sm" variant="secondary" text="Sign Up" />
+            </NuxtLink>
+        </div>
+
+    </div>
 </template>
 
 <script setup lang="ts">
-
 </script>
 
-<style scoped></style>
+<style scoped>
+@reference "tailwindcss";
+
+.router-link-active {
+    @apply text-[var(--200)]
+}
+
+.header{
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    @apply bg-[var(--alpha-bg)] border-[var(alpha-border)] rounded-xl flex items-center justify-evenly p-4 mt-5 w-full max-w-[1500px] mx-auto  fixed left-0 right-0  top-0
+}
+.logo{
+    h1{
+        @apply text-[var(--200)] text-2xl
+    }
+}
+nav{
+    a{
+        @apply text-xl
+    }
+    @apply flex items-center justify-center gap-5 
+}
+</style>

@@ -32,5 +32,5 @@ section{
 }
 
 .btn-wrap{
-    @apply mt-8 flex flex-wrap justify-center gap-4
+    @apply  flex flex-wrap justify-center gap-4
 }
