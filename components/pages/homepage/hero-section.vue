@@ -34,7 +34,7 @@ import hooks from '~/data/hooks.json'
 
 section{
     background:url('~/assets/images/hero.jpg') no-repeat center center fixed;
-    border-image: fill 0 linear-gradient(135deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.5));
+    border-image: fill 0 linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.5));
     @apply py-0 min-h-[100vh] justify-center;
 }
 .wrapper{
