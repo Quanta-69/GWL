@@ -6,5 +6,8 @@ export default defineNuxtConfig({
         "@/assets/css/default.css",
         "@/assets/css/global.css"
   ],
+  ui: {
+    prefix: 'Glass'
+  },
   modules: ["@nuxt/icon", "@nuxt/ui", "@nuxtjs/tailwindcss"],
 });
