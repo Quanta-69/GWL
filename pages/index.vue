@@ -1,7 +1,6 @@
 <template>
     <div>
         <hero/>
-        <serviceoverview/>
         <portfoliosnippet/>
         <howitworks/>
         <wcu/>

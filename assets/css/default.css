@@ -17,13 +17,18 @@
       
   
     /* Backgrounds for the glass effect */
-    --alpha-bg: rgba(255, 255, 255, 0.106);
+    --alpha-bg: rgba(0, 0, 0, 0.1);
     --alpha-border:rgba(255, 255, 255, 0.2);
   
     /* Text Colors */
     --dark: #121212; 
     --gray: #B0B0B0;
     --light:#f1f7f6;
+
+    /*Definitions*/
+    --max-w:1700px;
+    --min-h:50dvh;
+    --blur:15px;
 }
 html{
     scroll-behavior: smooth;

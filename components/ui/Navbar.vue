@@ -37,7 +37,7 @@
 const scrolled = ref(false)
 
 const handleScroll = () => {
-    scrolled.value = window.scrollY > 500 
+    scrolled.value = window.scrollY > 100 
 }
 onMounted(() => {
     window.addEventListener('scroll', handleScroll)
@@ -49,9 +49,13 @@ onBeforeUnmount(() => {
 
 <style scoped>
 @reference "tailwindcss";
-
+.static{
+    opacity: 0;
+    max-width: 1200px;
+}
 .scrolled {
-    max-width: 100vw;
+    opacity: 1;
+    max-width: 1500px;
 }
 .router-link-active {
     @apply text-[var(--200)]
@@ -59,8 +63,8 @@ onBeforeUnmount(() => {
 
 header{
     z-index: 100;
-    backdrop-filter: blur(10px);
-    @apply bg-[var(--alpha-bg)] border-[var(alpha-border)] rounded-xl flex items-center justify-evenly p-4 mt-5 w-full max-w-[1500px] mx-auto  fixed left-0 right-0  top-0
+    backdrop-filter: blur(var(--blur));
+    @apply bg-[var(--alpha-bg)] border-2 border-[var(--alpha-border)] rounded-xl flex items-center justify-evenly p-4 mt-5 w-full max-w-[var(--max-w)] mx-auto  fixed left-0 right-0  top-0
 }
 .logo{
     h1{

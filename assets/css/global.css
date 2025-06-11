@@ -2,15 +2,15 @@
 @reference "tailwindcss";
 
 body{
-    @apply bg-indigo-900
+    @apply bg-indigo-900 min-h-screen
 }
 
 section{
-    @apply w-full max-h-[50vh] flex items-center flex-col py-10
+    @apply w-full max-h-[var(--min-h)] flex items-center justify-center flex-col 
 }
 
-.wrapper{
-    @apply max-w-[1500px] w-full flex items-center justify-center flex-col gap-10
+.wrapper, .gradient{
+    @apply shadow-xl rounded-xl max-w-[var(--max-w)]  w-full flex items-center justify-center flex-col gap-10
 }
 .sect-text-wrap{
     .sect-name{

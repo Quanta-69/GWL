@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Home",
+    "path": "/"
+  },
+  {
+    "name": "About",
+    "path": "/about"
+  },
+  {
+    "name": "Portfolio",
+    "path": "/portfolio"
+  },
+  {
+    "name": "Pricing",
+    "path": "/pricing"
+  },
+  {
+    "name": "Contact",
+    "path": "/contact"
+  },
+  {
+    "name": "Faq",
+    "path": "/faq"
+  },
+  {
+    "name": "Get a website",
+    "path": "/get-a-website"
+  },
+  {
+    "name": "Dashboard",
+    "path": "/dashboard"
+  },
+  {
+    "name": "Get Started",
+    "path": "/get-started"
+  },
+  {
+    "name": "How it works",
+    "path": "/how-it-works"
+  },
+  {
+    "name": "Login",
+    "path": "/login"
+  },
+  {
+    "name": "Services",
+    "path": "/services"
+  },
+  {
+    "name": "Sign Up",
+    "path": "/signup"
+  }
+]
