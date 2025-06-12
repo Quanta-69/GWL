@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @reference "tailwindcss";
 
 *{
-    font-family: "Montserrat", cursive;
-    word-spacing: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     transition: all 0.3s;
     @apply p-0 m-0 font-semibold text-[var(--light)]
 }
@@ -29,6 +27,8 @@
     --max-w:1700px;
     --min-h:50dvh;
     --blur:15px;
+    --body-bg:#141414;
+    --text-bg:9rem;
 }
 html{
     scroll-behavior: smooth;

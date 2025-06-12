@@ -2,13 +2,22 @@
 @reference "tailwindcss";
 
 body{
-    @apply bg-indigo-900 min-h-screen
+    @apply bg-[var(--body-bg)] min-h-screen
 }
 
 section{
-    @apply w-full max-h-[var(--min-h)] flex items-center justify-center flex-col 
+    border-image: fill 0 linear-gradient(150deg, var(--body-bg), black, var(--body-bg));
+    @apply w-full min-h-[var(--min-h)] flex items-center justify-center flex-col relative
 }
 
+.fixed-bg-text{
+    h1{
+        font-size: var(--text-bg);
+        background: linear-gradient(45deg, var(--100), var(--300));
+        @apply text-transparent bg-clip-text
+    }
+    @apply flex items-center justify-center w-full max-w-[var(--max-w)] h-full fixed left-0 right-0 mx-auto bottom-0 
+}
 .wrapper, .gradient{
     @apply shadow-xl rounded-xl max-w-[var(--max-w)]  w-full flex items-center justify-center flex-col gap-10
 }
@@ -26,11 +35,11 @@ section{
 }
 .card-wrap{
     .card{
-        @apply flex items-center justify-center gap-4 py-2 px-2 w-full max-w-[320px] shadow-md
+        backdrop-filter: blur(var(--blur));
+        @apply flex flex-col items-center justify-center gap-4 py-2 px-2 w-full max-w-[320px] shadow-md rounded-xl
     }
     @apply w-full flex items-center justify-center gap-5 flex-wrap
 }
-
 .btn-wrap{
     @apply  flex flex-wrap justify-center gap-4
 }
