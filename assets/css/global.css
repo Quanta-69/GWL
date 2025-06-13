@@ -7,7 +7,10 @@ body{
 
 section{
     border-image: fill 0 linear-gradient(150deg, var(--body-bg), black, var(--body-bg));
-    @apply w-full min-h-[var(--min-h)] flex items-center justify-center flex-col relative
+    @apply w-full min-h-[var(--min-h)] flex items-center justify-center flex-col
+}
+section.has-fixed{
+    @apply relative
 }
 
 .fixed-bg-text{
@@ -16,7 +19,8 @@ section{
         background: linear-gradient(45deg, var(--100), var(--300));
         @apply text-transparent bg-clip-text
     }
-    @apply flex items-center justify-center w-full max-w-[var(--max-w)] h-full fixed left-0 right-0 mx-auto bottom-0 
+    z-index: -10;
+    @apply flex items-center justify-center w-full max-w-[var(--max-w)] h-full fixed left-0 right-0 mx-auto bottom-0
 }
 .wrapper, .gradient{
     @apply shadow-xl rounded-xl max-w-[var(--max-w)]  w-full flex items-center justify-center flex-col gap-10

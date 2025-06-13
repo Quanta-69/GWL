@@ -1,5 +1,5 @@
 <template>
-    <section class="hasfixed" >
+    <section class="has-fixed" >
         <div class="wrapper">
             <div class="fixed-bg-text">
                 <h1>Portfolio</h1>
@@ -14,10 +14,5 @@
 
 <style scoped>
 @reference "tailwindcss";
-section.hasfixed {
-    z-index: -10;
-}
-.fixed-bg-text{
-    z-index: -9;
-}
+
 </style>

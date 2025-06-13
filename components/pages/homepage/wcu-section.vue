@@ -1,5 +1,5 @@
 <template>
-    <section class="hasfixed">
+    <section class="has-fixed">
         <div class="wrapper">
             <div class="fixed-bg-text">
                 <h1>Why Choose Us</h1>
@@ -13,10 +13,5 @@
 </script>
 
 <style scoped>
-section.hasfixed {
-    z-index: -8;
-}
-.fixed-bg-text {
-    z-index: -7;
-}
+
 </style>
