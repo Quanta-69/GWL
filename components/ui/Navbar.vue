@@ -60,6 +60,9 @@ onBeforeUnmount(() => {
 .router-link-active {
     @apply text-[var(--200)]
 }
+.router-link-active:hover{
+    @apply text-[var(--300)]
+}
 
 header{
     z-index: 100;
