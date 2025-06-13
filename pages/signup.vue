@@ -1,19 +1,19 @@
 <template>
-    <div>
-        <h1>Signup</h1>
-    </div>
+  <SignupSection />
 </template>
 
 <script setup lang="ts">
+import SignupSection from '~/components/pages/signuppage/signup-section.vue'
+
 useHead({
-    title: 'Signup | GlassWebLabs',
-    meta: [
-        { name: 'author', content: 'Quantoxt' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-    ]
+  title: 'Signup | GlassWebLabs',
+  meta: [
+    { name: 'author', content: 'Quantoxt' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+  ]
 })
 </script>
 
 <style scoped>
-
+/* Optional page-specific styles */
 </style>
