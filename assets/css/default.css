@@ -25,10 +25,10 @@
 
     /*Definitions*/
     --max-w:1700px;
-    --min-h:80dvh;
+    --min-h:50dvh;
     --blur:15px;
     --body-bg:#141414;
-    --text-bg:9rem;
+    --text-bg:7rem;
 }
 html{
     scroll-behavior: smooth;

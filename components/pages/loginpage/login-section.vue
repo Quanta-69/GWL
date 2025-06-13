@@ -10,7 +10,7 @@
 
       <!-- Right Login Form -->
       <div class="form-area">
-        <h2>Log in to Your Accousnt</h2>
+        <h2>Log in to Your Account</h2>
         <input type="email" placeholder="Email Address" />
         <input type="password" placeholder="Enter Password" />
         <button class="submit-btn">Log In</button>
