@@ -56,13 +56,13 @@ section{
     @apply text-3xl
   }
   h1 {
-      @apply  text-[var(--light)] text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-xl
+      @apply  text-[var(--light)] text-5xl md:text-6xl font-extrabold tracking-tight drop-shadow-xl text-center
     }
     span {
       @apply text-[var(--200)]
     }
     p {
-      @apply m-8 text-4xl md:text-xl leading-relaxed text-center
+      @apply m-8 text-2xl md:text-xl leading-relaxed text-center sm:text-4xl
     }
   @apply flex flex-col items-center justify-center gap-6 p-2
 }
