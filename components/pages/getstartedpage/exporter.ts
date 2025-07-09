@@ -1,1 +1,1 @@
-export { default as requestcta } from "./request-site-cta-section.vue";
+export { default as request_cta } from "./request-site-cta-section.vue";

@@ -1,0 +1,35 @@
+<template>
+<section>
+  <div class="wrapper">
+    <div class="text-content">
+      <h1>Ready To Take The Next Big Step?</h1>
+      <h2>it's one click away!</h2>
+    </div>
+    <div class="btn-wrap">
+      <GlassButton text="START MY PROJECT" variant="secondary" size="lg"/>
+    </div>
+  </div>
+</section>
+</template>
+
+<script setup lang="ts"></script>
+
+<style scoped>
+@reference "tailwindcss";
+
+section{
+  @apply bg-[var(--60)]
+}
+.text-content{
+  h1{
+    @apply text-4xl sm:text-8xl text-[var(--30)] text-center
+  }
+  h2{
+    @apply text-center text-4xl sm:text-5xl uppercase
+  }
+  @apply flex flex-col gap-10
+}
+.btn-wrap{
+  @apply mt-5
+}
+</style>

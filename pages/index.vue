@@ -1,17 +1,18 @@
 <template>
     <div>
         <hero/>
-        <serviceoverview/>
-        <portfoliosnippet/>
-        <howitworks/>
+        <service_overview/>
+        <how_it_works/>
+        <portfolio_snippet/>
+        <template_snippet/>
         <wcu/>
-        <testimonialsnippet/>
-        <finalcta/>
+        <testimonial_snippet/>
+        <final_cta/>
     </div>
 </template>
 
 <script setup lang="ts">
-import { finalcta, hero, howitworks, portfoliosnippet, serviceoverview, testimonialsnippet, wcu } from '~/components/pages/homepage/exporter'
+import { final_cta, hero, how_it_works, portfolio_snippet, service_overview, template_snippet, testimonial_snippet, wcu } from '~/components/pages/homepage/exporter'
 useHead({
     title: 'Home | GlassWebLabs',
     meta: [

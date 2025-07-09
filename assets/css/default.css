@@ -1,9 +1,9 @@
 @reference "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{
-    font-family:Inter;
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ */*{
+    font-family:Arial;
     transition: all 0.3s;
-    @apply p-0 m-0 font-semibold text-[var(--light)]
+    @apply p-0 m-0 
 }
 :root {
     --100:#c7aff7;
@@ -11,7 +11,12 @@
     --300:#8569e4;
     --400:#6b39bc;
     --500:#510993;
-    --600:#000000;
+    --600:#444444;
+
+    --60: #F1B604;
+    --30:#1B3A57;
+    --10:#edaf1e;
+    --accent:#00D5BE;
       
   
     /* Backgrounds for the glass effect */
@@ -19,16 +24,16 @@
     --alpha-border:rgba(255, 255, 255, 0.2);
   
     /* Text Colors */
-    --dark: #121212; 
+    --dark: black; 
     --gray: #B0B0B0;
-    --light:#f1f7f6;
+    --light:#FAFAFA;
 
     /*Definitions*/
     --max-w:1700px;
     --min-h:50dvh;
     --blur:15px;
-    --body-bg:#141414;
-    --text-bg:7rem;
+    --body-bg:white;
+    --text:4.5rem;
 }
 html{
     scroll-behavior: smooth;
@@ -55,6 +60,6 @@ html {
     scrollbar-color: #444 #1a1a1a; /* Thumb color and track color */
 }
 ::selection{
-background:var(--400);
-color: white;
+background:var(--10);
+color: var(--dark);
 }

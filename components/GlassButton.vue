@@ -71,28 +71,26 @@ button {
 }
 
 .base-btn-styles {
-    @apply rounded-xl font-semibold hover:cursor-pointer shadow-md;
+    @apply rounded-xl hover:cursor-pointer shadow-md;
 }
 
 /* Variants */
 .btn-primary {
-    background:var(--300);
-    @apply text-[var(--light)];
+    background:var(--60);
+    @apply text-[var(--dark)] border border-[var(--dark)];
 }
 
 .btn-primary:hover {
-    background: var(--400);
+    background: var(--10);
 }
 
 .btn-secondary {
-    background: var(--light);
-    @apply border text-[var(--dark)];
+    background: var(--dark);
+    @apply border border-[var(--dark)] text-[var(--light)];
 }
 
 .btn-secondary:hover {
-    background: var(--alpha-background);
-    backdrop-filter: blur(10px);
-    @apply border text-[var(--light)];
+    @apply border  border-[var(--gray)];
 }
 
 .btn-ghost {
@@ -103,11 +101,11 @@ button {
 
 /* Sizes */
 .btn-sm {
-    @apply px-3.5 py-1.5 text-sm;
+    @apply px-4 py-2 text-sm;
 }
 
 .btn-md {
-    @apply px-6 py-3 text-base;
+    @apply px-6 py-2.5 text-base;
 }
 
 .btn-lg {

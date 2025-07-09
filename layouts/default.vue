@@ -1,13 +1,14 @@
 <template>
     <div>
-        <navbar/>
+        <Navbar/>
         <slot />
+        <Footer/>
     </div>
 
 </template>
 
 <script setup lang="ts">
-import {navbar, footer} from "~/components/ui/exporter";
+import {Navbar, Footer} from "~/components/ui/exporter";
 </script>
 
 <style scoped>

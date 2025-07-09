@@ -6,8 +6,5 @@ export default defineNuxtConfig({
         "@/assets/css/default.css",
         "@/assets/css/global.css"
   ],
-  ui: {
-    prefix: 'G'
-  },
-  modules: ["@nuxt/icon", "@nuxt/ui", "@nuxtjs/tailwindcss"],
+  modules: [ "@nuxtjs/tailwindcss"],
 });

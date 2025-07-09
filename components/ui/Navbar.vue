@@ -37,7 +37,7 @@
 const scrolled = ref(false)
 
 const handleScroll = () => {
-    scrolled.value = window.scrollY > 100 
+    scrolled.value = window.scrollY > 20 
 }
 onMounted(() => {
     window.addEventListener('scroll', handleScroll)
@@ -58,16 +58,16 @@ onBeforeUnmount(() => {
     max-width: 1500px;
 }
 .router-link-active {
-    @apply text-[var(--200)]
+    @apply text-[var(--60)]
 }
 .router-link-active:hover{
-    @apply text-[var(--300)]
+    @apply text-[var(--60)]
 }
 
 header{
     z-index: 100;
     backdrop-filter: blur(var(--blur));
-    @apply bg-[var(--alpha-bg)] border-2 border-[var(--alpha-border)] rounded-xl flex items-center justify-evenly p-4 mt-5 w-full max-w-[var(--max-w)] mx-auto  fixed left-0 right-0  top-0
+    @apply bg-[var(--600)] border-2 border-[var(--alpha-border)] rounded-xl flex items-center justify-evenly p-4 mt-5 w-full max-w-[var(--max-w)] mx-auto  fixed left-0 right-0  top-0
 }
 .logo{
     h1{

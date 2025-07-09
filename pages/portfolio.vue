@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <h1>Portfolio</h1>
-    </div>
+        <home_section/>
+        <portfolio_section/>
 </template>
 
 <script setup lang="ts">
+import { home_section, portfolio_section } from '~/components/pages/portfoliopage/exporter';
 useHead({
     title: 'Portfolio | GlassWebLabs',
     meta: [

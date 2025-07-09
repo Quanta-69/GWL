@@ -1,10 +1,11 @@
 <template>
-    <div>
-        <h1>Get Started</h1>
-    </div>
+<div>
+    <request_cta/>
+</div>
 </template>
 
 <script setup lang="ts">
+import { request_cta } from '~/components/pages/getstartedpage/exporter';
 useHead({
     title: 'Get Started | GlassWebLabs',
     meta: [
