@@ -96,6 +96,7 @@ section {
 
 .card-svg * {
   fill: currentColor;
+  @apply p-1
 }
 
 .btn-wrap {

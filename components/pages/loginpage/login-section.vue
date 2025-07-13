@@ -1,44 +1,115 @@
 <template>
-  <section>
+<section>
+  <div class="wrapper">
+
     <div class="left">
+      <div class="brand-row">
+        <div class="logo"></div>
+        <div class="name">Glass Web Labs</div>
+      </div>
       <div class="text-content">
-        <h1>Welcome Back</h1>
-        <h2>Log in to access your dashboard, manage your account and access the latest features of Glass Web Labs</h2>
+        <h1>Welcome Back!</h1>
+        <p>Login to your account to continue</p>
+      </div>
+      <div class="form-wrap">
+        <div class="input-wrap">
+          <label for="email">Email</label>
+          <input type="text" placeholder="Email">
+        </div>
+        <div class="input-wrap">
+          <label for="password">Password</label>
+          <input type="text" placeholder="Password">
+        </div>
+        <NuxtLink>Forgot Password?</NuxtLink>
       </div>
       <div class="btn-wrap">
-        <NuxtLink to="/" >
-          <GlassButton text="Go Home" variant="secondary" size="md"/>
-        </NuxtLink>
+        <GlassButton text="Login" variant="primary"  />
+        <div class="divider">OR</div>
+        <GlassButton text="Login with Google" variant="secondary" />
+        <GlassButton text="Login with Apple" variant="ghost" />
+      </div>
+      <div class="sign-up">
+        <p>Don't have an account?</p>
+        <NuxtLink to="/signup" >Sign Up</NuxtLink>
       </div>
     </div>
-    <div class="right"></div>
-  </section>
+
+    <div class="right">
+      <div class="text-content">
+        <h1></h1>
+        <div class="testimonial"></div>
+      </div>
+      <div class="company-hooks"></div>
+    </div>
+
+  </div>
+</section>
 </template>
 
-<script setup lang="ts"></script>
+<script setup>
 
-<style scoped>
+</script>
+
+<style lang="css" scoped>
 @reference "tailwindcss";
-
-section {
-  .left, .right {
-    @apply h-screen w-full py-10 flex items-center justify-center flex-col gap-5
-  }
-  .left {
-    .text-content{
-      h1{
-        @apply text-4xl sm:text-7xl text-[var(--60)] font-bold
-      }
-      h2{
-        @apply text-xl text-center text-[var(--light)]
-      }
-      @apply flex items-center justify-center gap-5 flex-col max-w-[700px]
+.wrapper{
+  @apply flex-row bg-gray-200 min-h-[90vh] p-15;
+}
+.left, .right{
+  @apply w-full py-10 flex-col px-6 gap-10 rounded-xl
+}
+.left{
+  .brand-row{
+    .logo{
+      @apply h-10 w-10 rounded-full bg-gray-300;
     }
-    @apply bg-[var(--30)];
+    .name{
+      @apply text-2xl 
+    }
+    @apply flex items-start w-full gap-3;
   }
-  .right {
-    @apply bg-[var(--light)];
+  .text-content{
+    h1{
+      @apply text-3xl font-medium text-[var(--10)]
+    }
+    p{
+      @apply text-lg text-[var(--gray)]
+    }
+    @apply flex flex-col gap-2 w-full items-start;
   }
-  @apply min-h-screen rounded-none flex-row m-0 p-0;
+  .form-wrap{
+    @apply flex flex-col gap-2 w-full;
+    .input-wrap{
+      @apply flex flex-col gap-1;
+    }
+    label{
+      @apply text-sm text-[var(--gray)] mb-1
+    }
+    input{
+      @apply p-2 rounded-md border border-gray-300 max-w-[390px] w-full;
+    }
+    a{
+      @apply text-sm text-[var(--10)] underline font-bold mt-1;
+    }
+  }
+  .btn-wrap{
+    .divider{
+      @apply text-sm text-[var(--gray)] text-center
+    }
+    @apply flex flex-col gap-2 w-full max-w-[390px] gap-5;
+  }
+  .sign-up{
+    p{
+      @apply text-sm text-[var(--gray)]
+    }
+    a{
+      @apply text-sm text-[var(--10)]  font-bold;
+    }
+    @apply flex items-center gap-2 ms-20;
+  }
+    @apply flex items-start justify-center bg-[var(--light)] ps-20 pt-10
+}
+.right{
+  background: linear-gradient(120deg, var(--100), var(--30));
 }
 </style>

@@ -96,7 +96,7 @@ button {
 .btn-ghost {
     backdrop-filter: blur(10px);
     background: var(--alpha-background);
-    @apply border border-[var(--light)] hover:bg-[var(--light)] hover:text-[var(--dark)];
+    @apply border border-[var(--gray)] hover:bg-[var(--light)] hover:text-[var(--dark)];
 }
 
 /* Sizes */
