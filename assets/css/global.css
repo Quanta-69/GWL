@@ -42,7 +42,7 @@ section{
     *{
       fill: black;
     }
-    @apply h-11 w-11 rounded-full bg-[var(--alpha-bg)] inline-flex justify-center items-center shadow-sm p-1.5
+    @apply h-12 w-12 rounded-full bg-[var(--alpha-bg)] inline-flex justify-center items-center shadow-sm p-1.5
   }
 .btn-wrap{
     @apply  flex flex-wrap justify-center gap-4

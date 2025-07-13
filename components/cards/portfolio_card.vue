@@ -1,63 +1,99 @@
 <template>
-    <div class="card">
-        <img :src="image" :alt="image" />
-
-        <h3>{{ title }}</h3>
-
-        <p>{{ description }}</p>
-
-        <div class="btn-wrap">
-
-            <NuxtLink :to="` https://`+ live_url" target="_blank" >
-                <GlassButton  text="Visit" variant="secondary" size="sm"/>
-            </NuxtLink>
-
-            <NuxtLink :to="case_page_url"  target="_blank">
-                <GlassButton  text="case study" variant="ghost" size="sm" />
-            </NuxtLink>
-
-        </div>
-
+  <article class="card">
+    <div class="image-container">
+      <img :src="image" :alt="`Screenshot of ${title} project`" />
     </div>
+
+    <div class="content">
+      <h3>{{ title }}</h3>
+      <p>{{ description }}</p>
+    </div>
+
+    <div class="btn-wrap">
+      <NuxtLink :to="live_url" target="_blank" rel="noopener noreferrer">
+        <GlassButton text="Visit" variant="primary" size="sm" />
+      </NuxtLink>
+
+      <NuxtLink :to="case_page_url" target="_blank" rel="noopener noreferrer">
+        <GlassButton text="Case Study" variant="ghost" size="sm" />
+      </NuxtLink>
+    </div>
+  </article>
 </template>
 
 <script setup lang="ts">
-defineProps({
-    title: String,
-    description: String,
-    image: String,
-    live_url: String,
-    case_page_url: String,
-});
+interface PortfolioCardProps {
+  title: string;
+  description: string;
+  image: string;
+  live_url: string;
+  case_page_url: string;
+}
+
+defineProps<PortfolioCardProps>();
 </script>
 
 <style scoped>
 @reference "tailwindcss";
 
-.card{
-    backdrop-filter: blur(var(--blur));
-    @apply min-w-[300px] gap-2 items-center overflow-hidden border border-[var(--gray)] py-10
+.card {
+  backdrop-filter: blur(var(--blur));
+  @apply min-w-[300px] gap-4 items-center overflow-hidden border border-[var(--gray)] py-8 px-6 rounded-xl;
+  transition: all 0.3s ease;
 }
-h3, p, a{
-    @apply ps-2 text-center
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
-h3{
-    @apply uppercase text-xl text-transparent bg-clip-text bg-gradient-to-r from-[var(--100)] to-[var(--200)] font-bold
+
+.image-container {
+  @apply flex justify-center;
 }
-p{
-    @apply text-[var(--gray)]
+
+.content {
+  @apply flex flex-col gap-3 text-center;
 }
-img{
-    height: 330px;
-    width: 250px;
-    object-fit: cover;
-    border-radius: 30px;
-    filter: grayscale(1);
+
+.content h3 {
+  @apply uppercase text-xl text-[var(--60)] font-bold;
 }
-img:hover{
-    filter: grayscale(0);
+
+.content p {
+  @apply text-[var(--gray)] text-sm leading-relaxed;
 }
-.btn-wrap{
-    @apply gap-4
+
+img {
+  height: 280px;
+  width: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+}
+
+img:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+.btn-wrap {
+  @apply flex gap-3 justify-center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .card {
+    @apply min-w-[280px] py-6 px-4;
+  }
+
+  img {
+    height: 240px;
+    width: 180px;
+  }
+
+  .content h3 {
+    @apply text-lg;
+  }
 }
 </style>
