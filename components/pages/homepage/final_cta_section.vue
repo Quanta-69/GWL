@@ -2,7 +2,7 @@
 <section>
   <div class="wrapper">
     <div class="text-content">
-      <h1>Ready To Take The Next Big Step?</h1>
+      <h1>Ready To Bring Your Dreams To Life?</h1>
       <h2>it's one click away!</h2>
     </div>
     <div class="btn-wrap">

@@ -10,8 +10,8 @@
     </div>
 
     <div class="btn-wrap">
-      <NuxtLink :to="live_url" target="_blank" rel="noopener noreferrer">
-        <GlassButton text="Visit" variant="primary" size="sm" />
+      <NuxtLink :to="`https://${live_url}`" target="_blank" rel="noopener noreferrer">
+        <GlassButton text="Visit Site" variant="primary" size="sm" />
       </NuxtLink>
 
       <NuxtLink :to="case_page_url" target="_blank" rel="noopener noreferrer">
@@ -42,11 +42,6 @@ defineProps<PortfolioCardProps>();
   transition: all 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
 .image-container {
   @apply flex justify-center;
 }
@@ -65,7 +60,7 @@ defineProps<PortfolioCardProps>();
 
 img {
   height: 280px;
-  width: 220px;
+  width: 100vw;
   object-fit: cover;
   border-radius: 20px;
   filter: grayscale(1);

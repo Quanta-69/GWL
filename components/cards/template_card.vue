@@ -1,36 +1,42 @@
 <template>
     <div class="card">
-        <img :src="image" alt="">
+        <img :src="image" :alt="`Screenshot of ${title} template`">
         <div class="text-content">
             <h1>{{ title }}</h1>
             <h2>{{ price }}</h2>        
         </div>
         <p>{{ description }}</p>
         <div class="btn-wrap">
-            <NuxtLink to="/get-a-website" >
+            <NuxtLink to="/get-a-website"  rel="noopener noreferrer">
                 <GlassButton text="Use Template" size="sm" variant="primary" />
             </NuxtLink>
-            <NuxtLink :to="`https://`+ live_url" target="_blank">
+
+            <NuxtLink :to="`https://${live_url}`" target="_blank" rel="noopener noreferrer">
                 <GlassButton text="Live demo" size="sm" variant="secondary" />
             </NuxtLink>
+
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
-    title: String,
-    description: String,
-    image: String,
-    live_url: String,
-    price: String
-});
+interface TemplateCardProps {
+  title: string;
+  description: string;
+  image: string;
+  live_url: string;
+  price:string
+  case_page_url: string;
+}
+
+defineProps<TemplateCardProps>();
+
 </script>
 
 <style scoped>
 @reference "tailwindcss";
 .card{
-    @apply min-w-[430px] items-start pb-8 pt-0 pl-0 pr-0 border border-[var(--gray)]
+    @apply min-w-[430px] items-start pb-8 pt-0 pl-0 pr-0  border border-[var(--alpha-border)]
 }
 .text-content{
     @apply flex items-start justify-between  w-full pe-5
@@ -51,6 +57,10 @@ img{
     height: 330px;
     width: 100%;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 10px;
+    filter: grayscale(1);
+}
+img:hover{
+    filter: grayscale(0);
 }
 </style>

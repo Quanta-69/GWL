@@ -4,8 +4,7 @@
       <div class="text-content">
         <h1>Tired of Slow, Generic Websites?</h1>
         <h2>
-          We build <mark>custom solutions</mark> that actually convert visitors
-          into customers
+          We build <mark>custom solutions</mark> that actually convert visitors into customers
         </h2>
       </div>
 
@@ -71,7 +70,7 @@ section {
 }
 
 .text-content h2 {
-  @apply text-3xl;
+  @apply text-3xl text-center px-8;
 }
 
 .text-content h2 mark {
@@ -96,11 +95,11 @@ section {
 
 .card-svg * {
   fill: currentColor;
-  @apply p-1
+  @apply p-1 w-12
 }
 
 .btn-wrap {
-  @apply flex flex-wrap justify-center gap-4;
+  @apply flex flex-wrap justify-center gap-4 mt-5;
 }
 
 /* Responsive design */

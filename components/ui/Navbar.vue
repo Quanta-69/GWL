@@ -67,7 +67,7 @@ onBeforeUnmount(() => {
 header{
     z-index: 100;
     backdrop-filter: blur(var(--blur));
-    @apply bg-[var(--600)] border-2 border-[var(--alpha-border)] rounded-xl flex items-center justify-evenly p-4 mt-5 w-full max-w-[var(--max-w)] mx-auto  fixed left-0 right-0  top-0
+    @apply border-2 border-[var(--60)] rounded-xl flex items-center justify-evenly p-4 mt-5 w-full max-w-[var(--max-w)] mx-auto  fixed left-0 right-0  top-0
 }
 .logo{
     h1{
