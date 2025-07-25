@@ -12,7 +12,7 @@
 @reference "tailwindcss";
 
 section{
-    background: url(/assets/images/backgrounds/blue_water.jpg) no-repeat fixed center/cover;
+    background: url(~/assets/images/svg-bgs/wave-2.svg) no-repeat fixed center/cover;
     @apply min-h-[100vh]
 }
 h1{

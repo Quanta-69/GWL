@@ -13,17 +13,13 @@
       </div>
 
       <div class="card-wrap">
-        <portfolio_card
-          v-for="(portfolio, index) in portfolios"
+        <portfolio_card v-for="(portfolio, index) in portfolios"
           :key="portfolio.title || index"
           :title="portfolio.title || 'Untitled Project'"
-          :description="
-            portfolio.description || 'Project description coming soon'
-          "
+          :description="portfolio.description || 'Project description coming soon'"
           :image="portfolio.image || '/portfolio/default.jpg'"
           :live_url="portfolio.live_url || '#'"
-          :case_page_url="portfolio.case_page_url || '#'"
-        />
+          :case_page_url="portfolio.case_page_url || '#'"/>
       </div>
 
     </div>

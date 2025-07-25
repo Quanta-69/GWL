@@ -31,7 +31,7 @@
           <GlassButton text="Explore Templates" variant="secondary" size="md" />
         </NuxtLink>
       </div>
-    </div>
+    </div> 
   </section>
 </template>
 

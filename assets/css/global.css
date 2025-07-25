@@ -13,6 +13,7 @@ section{
     @apply relative
 }*/
 .wrapper{
+    z-index: 0;
     @apply  rounded-xl max-w-[var(--max-w)]  w-full flex items-center justify-center flex-col gap-5
 }
 .sect-text-wrap{

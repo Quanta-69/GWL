@@ -56,6 +56,7 @@ onBeforeUnmount(() => {
 .scrolled {
     opacity: 1;
     max-width: 1500px;
+    @apply bg-[var(--light)]
 }
 .router-link-active {
     @apply text-[var(--60)]

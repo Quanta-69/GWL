@@ -1,10 +1,11 @@
 <template>
-        <home_section/>
+        <hero/>
         <portfolio_section/>
+        <final_cta/>
 </template>
 
 <script setup lang="ts">
-import { home_section, portfolio_section } from '~/components/pages/portfoliopage/exporter';
+import { hero, portfolio_section, final_cta } from '~/components/pages/portfoliopage/exporter';
 useHead({
     title: 'Portfolio | GlassWebLabs',
     meta: [

@@ -1,23 +1,36 @@
 <template>
-    <section>
-        <div class="wrapper">
-            <div class="text-content">
-                <h1>Recent Projects From The Team</h1>
-                <h2>View recent projects that were just launched and rate</h2>
-            </div>
-        </div>
-    </section>
+  <section>
+    <div class="radial"/>
+    <div class="wrapper">
+      <div class="text-content">
+        <h1>All Completed Projects in One Place</h1>
+        <h2>Carefully made projects that <mark>stand</mark> out</h2>
+      </div>
+      <div class="btn-wrap">
+        <GlassButton text="I Want A Project" />
+        <GlassButton  text="Learn More" variant="secondary" />
+      </div>
+    </div>
+  </section>
+
 </template>
 
 <script setup lang="ts">
-
 </script>
 
 <style scoped>
 @reference "tailwindcss";
 section{
-  background:url(~/assets/images/svg-bgs/wave-2.svg) center/cover fixed no-repeat;
-    @apply min-h-[90vh] my-0
+  .radial{
+          background-image: linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px); 
+          background-size: 20px 30px;
+          -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%);
+          mask-image: radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%);
+    @apply absolute inset-0 z-0 
+  }
+    background-image: radial-gradient(125% 125% at 50% 90%, #ffffff 40%, var(--60) 100%);
+    background-size: 100% 100%;
+    @apply min-h-[90vh] my-0 relative
 }
 .wrapper{
   .text-content{
