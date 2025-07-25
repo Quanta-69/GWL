@@ -2,11 +2,11 @@
 <section>
   <div class="wrapper">
     <div class="text-content">
-      <h1>Ready To Bring Your Dreams To Life?</h1>
+      <h1>Like What You See? Let's Collaborate!</h1>
       <h2>it's one click away!</h2>
     </div>
     <div class="btn-wrap">
-      <GlassButton text="START MY PROJECT" variant="secondary" size="lg"/>
+      <GlassButton text="Start Your Project Journey" variant="secondary" size="lg"/>
     </div>
   </div>
 </section>

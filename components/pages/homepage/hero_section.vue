@@ -1,5 +1,6 @@
 <template>
   <section>
+    <div class="radial"/>
     <div class="wrapper">
       <div class="text-content">
         <h1>Tired of Slow, Generic Websites?</h1>
@@ -52,8 +53,17 @@ const typedHooks = hooks as Hook[];
 <style scoped>
 @reference "tailwindcss";
 
-section {
-  @apply min-h-[95vh] my-0;
+section{
+  .radial{
+    background-image: linear-gradient(to right, #d1d5db 1px, transparent 1px), linear-gradient(to bottom, #d1d5db 1px, transparent 1px);
+    background-size: 32px 32px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 80% at 0% 0%, #000 50%, transparent 90%);
+    mask-image: radial-gradient(ellipse 80% 80% at 0% 0%, #000 50%, transparent 90%);
+    @apply absolute inset-0 z-0 
+  }
+    background-image: radial-gradient(125% 125% at 50% 90%, #ffffff 40%, var(--light) 100%);
+    background-size: 100% 100%;
+    @apply min-h-[90vh] my-0 relative
 }
 
 .wrapper {
