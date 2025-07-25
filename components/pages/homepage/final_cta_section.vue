@@ -6,7 +6,9 @@
       <h2>it's one click away!</h2>
     </div>
     <div class="btn-wrap">
-      <GlassButton text="Start My Project" variant="secondary" size="lg"/>
+      <NuxtLink to="/get-started">
+        <GlassButton text="Start My Project" variant="secondary" size="lg" />
+      </NuxtLink>
     </div>
   </div>
 </section>

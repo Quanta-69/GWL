@@ -56,7 +56,7 @@ const typedHooks = hooks as Hook[];
 section{
   .radial{
     background-image: linear-gradient(to right, #d1d5db 1px, transparent 1px), linear-gradient(to bottom, #d1d5db 1px, transparent 1px);
-    background-size: 32px 32px;
+    background-size: 50px 50px;
     -webkit-mask-image: radial-gradient(ellipse 80% 80% at 0% 0%, #000 50%, transparent 90%);
     mask-image: radial-gradient(ellipse 80% 80% at 0% 0%, #000 50%, transparent 90%);
     @apply absolute inset-0 z-0 
