@@ -8,6 +8,13 @@ body{
 section{
    @apply w-full min-h-[var(--min-h)] flex items-center justify-center flex-col py-12 rounded-xl mb-15
 }
+section.new-page{
+    .radial{
+        @apply absolute inset-0 z-0 
+    }
+    background-size: 100% 100%;
+    @apply min-h-[90vh] my-0 relative
+}
 /*section.has-fixed{
     z-index: -11;
     @apply relative

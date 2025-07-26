@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="new-page"> 
     <div class="radial"/>
     <div class="wrapper">
       <div class="text-content">
@@ -56,14 +56,11 @@ const typedHooks = hooks as Hook[];
 section{
   .radial{
     background-image: linear-gradient(to right, #d1d5db 1px, transparent 1px), linear-gradient(to bottom, #d1d5db 1px, transparent 1px);
-    background-size: 50px 50px;
+    background-size: 70px 70px;
     -webkit-mask-image: radial-gradient(ellipse 80% 80% at 0% 0%, #000 50%, transparent 90%);
     mask-image: radial-gradient(ellipse 80% 80% at 0% 0%, #000 50%, transparent 90%);
-    @apply absolute inset-0 z-0 
   }
     background-image: radial-gradient(125% 125% at 50% 90%, #ffffff 40%, var(--light) 100%);
-    background-size: 100% 100%;
-    @apply min-h-[90vh] my-0 relative
 }
 
 .wrapper {

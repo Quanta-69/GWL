@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="new-page" >
     <div class="radial"/>
     <div class="wrapper">
       <div class="text-content">
@@ -22,15 +22,12 @@
 @reference "tailwindcss";
 section{
   .radial{
-          background-image: linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px); 
-          background-size: 60px 60px;
+          background-image: linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom,  #e2e8f0 1px, transparent 1px); 
+          background-size: 70px 70px;
           -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%);
           mask-image: radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%);
-    @apply absolute inset-0 z-0 
   }
     background-image: radial-gradient(125% 125% at 50% 90%, #ffffff 40%, var(--60) 100%);
-    background-size: 100% 100%;
-    @apply min-h-[90vh] my-0 relative
 }
 .wrapper{
   .text-content{

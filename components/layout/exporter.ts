@@ -1,0 +1,1 @@
+export {default as GlassHero} from './hero_section.vue';
