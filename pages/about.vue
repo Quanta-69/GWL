@@ -1,10 +1,12 @@
 <template>
-    <div>
-        <h1>About</h1>
-    </div>
+    <hero/>
+    <foundation/>
+    <story/>
+    <team/>
 </template>
 
 <script setup lang="ts">
+import { foundation, hero, story, team } from '~/components/pages/aboutpage/exporter';
 useHead({
     title: 'About Us | GlassWebLabs',
     meta: [

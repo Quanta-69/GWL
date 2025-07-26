@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <section id="foundation" >
 
-    </div>
+    </section>
 </template>
 
 <script setup lang="ts">

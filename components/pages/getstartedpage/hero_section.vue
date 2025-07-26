@@ -8,6 +8,7 @@
             btn_title_2="Learn More"
             primary_link=""
             secondary_link=""
+            page_title="get-started"
         />
 </template>
 
@@ -17,4 +18,5 @@ import { GlassHero } from '~/components/layout/exporter';
 
 <style scoped>
 @reference "tailwindcss";
+
 </style>
