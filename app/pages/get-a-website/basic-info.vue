@@ -93,7 +93,7 @@ const handleNext = () => {
 </script>
 
 <style scoped>
-@import "tailwindcss";
+@reference "tailwindcss";
 
 .page-content {
   @apply w-full max-w-md space-y-6; /* Styling for content within the slot */

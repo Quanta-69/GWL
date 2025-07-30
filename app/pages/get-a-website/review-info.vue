@@ -103,7 +103,7 @@ const handleSubmit = async () => {
 </script>
 
 <style scoped>
-@import "tailwindcss";
+@reference "tainwildcss";
 
 .page-content {
   @apply w-full max-w-md space-y-6;
