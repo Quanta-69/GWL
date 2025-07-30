@@ -1,0 +1,27 @@
+[
+  {
+    "step": "1",
+    "title": "Discovery",
+    "details": "We gather requirements and understand your needs."
+  },
+  {
+    "step": "2",
+    "title": "Design",
+    "details": "We create wireframes and prototypes to visualize the solution."
+  },
+  {
+    "step": "3",
+    "title": "Development",
+    "details": "We build the solution using the latest technologies."
+  },
+  {
+    "step": "4",
+    "title": "Testing",
+    "details": "We rigorously test the solution to ensure quality."
+  },
+  {
+    "step": "5",
+    "title": "Deployment",
+    "details": "We deploy the solution and provide ongoing support."
+  }
+]

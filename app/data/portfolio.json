@@ -1,0 +1,23 @@
+[
+  {
+    "title": "E-commerce Platform",
+    "description": "Modern online store with payment integration and inventory management",
+    "image": "/portfolio/CPU.jpeg",
+    "live_url": "https://example-store.com",
+    "case_page_url": "/portfolio/ecommerce-case"
+  },
+  {
+    "title": "Corporate Website",
+    "description": "Professional business website with lead generation and analytics",
+    "image": "/portfolio/Eclipse.jpg",
+    "live_url": "https://example-corp.com",
+    "case_page_url": "/portfolio/corporate-case"
+  },
+  {
+    "title": "Portfolio Showcase",
+    "description": "Creative portfolio website with smooth animations and modern design",
+    "image": "/portfolio/Green Building.jpg",
+    "live_url": "https://example-portfolio.com",
+    "case_page_url": "/portfolio/portfolio-case"
+  }
+]

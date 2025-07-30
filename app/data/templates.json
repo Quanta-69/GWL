@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Shut Down Gang",
+      "description": "Multi-purpose E-commerce website.",
+      "image": "/templates/sdg.jpg",
+      "live_url": "sdg.com",
+      "price":"$100"
+    },
+    {
+      "title":"2-wolves",
+      "description":"Healthcare website for therapy.",
+      "image":"/templates/2-wolves.jpg",
+      "live_url":"2-wolves.com",
+      "price":"$200"
+    },
+    {
+      "title":"Coding Quotes",
+      "description":"Daily quotes for all programmers",
+      "image":"/templates/coding-quotes.jpg",
+      "live_url":"coding-quotes.com",
+      "price":"$150"
+    }
+]

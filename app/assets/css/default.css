@@ -1,0 +1,65 @@
+@reference "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ */
+* {
+  font-family: Arial;
+  transition: all 0.3s;
+  @apply p-0 m-0;
+}
+:root {
+  --100: #c7aff7;
+  --200: #a68cee;
+  --300: #8569e4;
+  --400: #6b39bc;
+  --500: #510993;
+  --600: #444444;
+
+  --60: #f1b604;
+  --30: #1b3a57;
+  --10: #edaf1e;
+  --accent: #00d5be;
+
+  /* Backgrounds for the glass effect */
+  --alpha-bg: rgba(0, 0, 0, 0.1);
+  --alpha-border: rgba(255, 255, 255, 0.2);
+
+  /* Text Colors */
+  --dark: black;
+  --gray: #b0b0b0;
+  --light: #fafafa;
+
+  /*Definitions*/
+  --max-w: 1700px;
+  --min-h: 50dvh;
+  --blur: 15px;
+  --body-bg: white;
+  --text: 4.5rem;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  transition: all 3s !important;
+}
+
+html::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+html::-webkit-scrollbar-track {
+  background-color: #1a1a1a; /* Track color */
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #444; /* Thumb color */
+  border-radius: 6px; /* Rounded corners */
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: #666; /* Thumb color on hover */
+}
+/* Firefox scrollbar customization */
+html {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #444 #1a1a1a; /* Thumb color and track color */
+}
+::selection {
+  background: var(--10);
+  color: var(--dark);
+}

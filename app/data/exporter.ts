@@ -1,0 +1,12 @@
+export { default as case_studies } from './case_studies.json';
+export { default as contact_info } from './contact_info.json';
+export { default as faqs } from './faqs.json';
+export { default as hooks } from './hooks.json';
+export { default as nav_links } from './nav_links.json';
+export { default as portfolios } from './portfolio.json';
+export { default as processes } from './process.json';
+export { default as services } from './services.json';
+export { default as stats } from './stats.json';
+export { default as team } from './team.json';
+export { default as templates } from './templates.json';
+export { default as testimonials } from './testimonials.json';

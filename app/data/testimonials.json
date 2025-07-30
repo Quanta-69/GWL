@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Really Good",
+    "description": "The website was really fascinating it was very advanced, and it has boosted my productivity.",
+    "avatar_url": "../public/portfolio/Eclipse.jpg",
+    "name": "Tamica Obinya",
+    "role": "CEO of Gucci"
+  },
+  {
+    "title": "E Shock Me",
+    "description": "So as it stands now eh. I never see website like this before. It is so good, if I knew the team in person, I would reward them a large sum of money.",
+    "avatar_url": "",
+    "name": "Osas",
+    "role": "Bad Commando of SDG"
+  },
+  {
+    "title": "Utterly Ugly",
+    "description": "I hated it so much because the colors hurt my eyes and I could not get anywhere in it.It almost crashed my kingdom's database. Worst site ever.",
+    "avatar_url": "",
+    "name": "Vee_Vee",
+    "role": "Princess of Avalor"
+  }
+]
